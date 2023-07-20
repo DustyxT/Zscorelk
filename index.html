@@ -2,73 +2,78 @@
 <html>
 <head>
   <title>Z-Score Calculator</title>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Z-Score Calculator">
   <meta name="author" content="Your Name">
-  <meta name="description" content="Calculate you Z-score according to your marks that you got in your term test">
-   <link rel="icon" type="image/x-icon" href="8534.jpg">
-
-   <link rel="stylesheet" type="text/css" href="styles.css">
-   
+  <meta name="description" content="Calculate your Z-score according to the marks you got in your term test">
+  <link rel="icon" type="image/x-icon" href="8534.jpg">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-
-
   <script src="script.js"></script>
+  
+  <!-- Loading Progress Bar -->
+<div class="sunset">
+
+<video autoplay muted loop plays-inline class="back-video">
+  <source src="snow.mp4" type="video/mp4">
+</video>
+
+
+</div>
+		
 
   <div class="z-score-calculator">
     <h2>Z-Score Calculator</h2>
     <div>
       <label for="subject1">Subject 1 Marks:</label>
-      <input type="number" id="subject1" required>
+      <input type="number" id="subject1" class="input-box" required>
     </div>
     <div>
       <label for="mean1">Subject 1 Mean:</label>
-      <input type="number" id="mean1" required>
+      <input type="number" id="mean1" class="input-box" required>
     </div>
     <div>
       <label for="stdDev1">Subject 1 Standard Deviation:</label>
-      <input type="number" id="stdDev1" required>
+      <input type="number" id="stdDev1" class="input-box" required>
     </div>
     <div>
       <label for="subject2">Subject 2 Marks:</label>
-      <input type="number" id="subject2" required>
+      <input type="number" id="subject2" class="input-box" required>
     </div>
     <div>
       <label for="mean2">Subject 2 Mean:</label>
-      <input type="number" id="mean2" required>
+      <input type="number" id="mean2" class="input-box" required>
     </div>
     <div>
       <label for="stdDev2">Subject 2 Standard Deviation:</label>
-      <input type="number" id="stdDev2" required>
+      <input type="number" id="stdDev2" class="input-box" required>
     </div>
     <div>
       <label for="subject3">Subject 3 Marks:</label>
-      <input type="number" id="subject3" required>
+      <input type="number" id="subject3" class="input-box" required>
     </div>
     <div>
       <label for="mean3">Subject 3 Mean:</label>
-      <input type="number" id="mean3" required>
+      <input type="number" id="mean3" class="input-box" required>
     </div>
     <div>
       <label for="stdDev3">Subject 3 Standard Deviation:</label>
-      <input type="number" id="stdDev3" required>
+      <input type="number" id="stdDev3" class="input-box" required>
     </div>
     <button onclick="calculateZScores()">Calculate</button>
     <div id="results"></div>
   </div>
 
- <br>
+  <br>
 
   <div class="mean-calculator">
     <h2>Mean Calculator</h2>
     <div class="input-box">
       <label for="data-input-mean">Enter data (comma-separated):</label>
-      <textarea id="data-input-mean" placeholder="e.g., 12, 15, 18"></textarea>
+      <textarea id="data-input-mean" class="input-box" placeholder="Example: 55, 65, 75"></textarea>
     </div>
     <button onclick="calculateMean()">Calculate</button>
     <div class="result" id="result-mean"></div>
@@ -80,34 +85,38 @@
     <h2>Standard Deviation Calculator</h2>
     <div class="input-box">
       <label for="data-input">Enter data (comma-separated):</label>
-      <textarea id="data-input" placeholder="e.g., 12, 15, 18"></textarea>
+      <textarea id="data-input" class="input-box" placeholder="Example: 55, 65, 75"></textarea>
     </div>
     <button onclick="calculateStandardDeviation()">Calculate</button>
     <div class="result" id="result"></div>
   </div>
-  
+
   <br>
 
   <div class="total-z-score-calculator">
-    <h2>Total Z score Calculator</h2>
+    <h2>Total Z-Score Calculator</h2>
     <div>
-      <label for="zScore1">Z-score for Subject 01:</label>
-      <input type="number" id="zScore1" required>
+      <label for="zScore1">Z-Score for Subject 01:</label>
+      <input type="number" id="zScore1" class="input-box" required>
     </div>
     <div>
-      <label for="zScore2">Z-score for Subject 02:</label>
-      <input type="number" id="zScore2" required>
+      <label for="zScore2">Z-Score for Subject 02:</label>
+      <input type="number" id="zScore2" class="input-box" required>
     </div>
     <div>
-      <label for="zScore3">Z-score for Subject 03:</label>
-      <input type="number" id="zScore3" required>
+      <label for="zScore3">Z-Score for Subject 03:</label>
+      <input type="number" id="zScore3" class="input-box" required>
     </div>
     <button onclick="calculateTotalZScore()">Calculate</button>
     <div id="totalResults"></div>
   </div>
-<br>
 
-  <footer>Copyright © All rights reserved. | Zscorelk by Movindu Lochana</footer>
+  <br>
+
+  <footer>
+    <p>&copy; All rights reserved. | Zscorelk by Movindu Lochana</p>
+  </footer>
+
 
   <script>
     function calculateZScores() {
