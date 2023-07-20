@@ -1,5 +1,4 @@
 body {
-    background-image: url("sunset.mp4");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -289,12 +288,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-repeat: no-repeat;
   }
 
-  img{
-    width: 460px;
-    margin-top: 30px;
-    margin-left: 970px;
+
     
-  }
+
 
 
   ::placeholder{
