@@ -1,10 +1,12 @@
 body {
-    background-image: url("pexels-markus-spiske-360591.jpg");
+    background-image: url("sunset.mp4");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
     background-attachment: fixed;
+
     
   }
 
@@ -19,22 +21,24 @@ body {
     background:rgba(0,0,0,0.8);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+   
   }
 
   .z-score-calculator h2 {
     color: gold;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    margin: 10px 0 30px;
+    font-size: 40px;
   }
 
   .z-score-calculator label {
     display: block;
     margin-top: 10px;
-    color: whitesmoke;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .z-score-calculator input[type="number"] {
@@ -56,10 +60,12 @@ body {
     border-radius: 3px;
     cursor: pointer;
     font-weight: bolder;
+    
   }
 
   .z-score-calculator button:hover {
     background-color: #45a049;
+    
   }
 
   .z-score-calculator p {
@@ -89,16 +95,17 @@ body {
   .standard-deviation-calculator h2 {
     color: gold;
     text-align: center;
-    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 30px;
+    font-size: 40px;
   }
 
   .standard-deviation-calculator label {
     display: block;
     margin-top: 10px;
-    color: whitesmoke;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .standard-deviation-calculator textarea {
@@ -151,21 +158,24 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
+   
   }
 
   .mean-calculator h2 {
     color: gold;
     text-align: center;
-    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 30px;
+    font-size: 40px;
   }
 
   .mean-calculator label {
     display: block;
     margin-top: 10px;
-    color: whitesmoke;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .mean-calculator textarea {
@@ -206,7 +216,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     background-color: #f1f1f1;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-image: url("gsm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,21 +225,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
   }
 
   .total-z-score-calculator h2 {
     color: gold;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    margin: 10px 0 30px;
   }
 
   .total-z-score-calculator label {
     display: block;
     margin-top: 10px;
-    color: whitesmoke;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .total-z-score-calculator input[type="number"] {
@@ -276,3 +288,42 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  img{
+    width: 460px;
+    margin-top: 30px;
+    margin-left: 970px;
+    
+  }
+
+
+  ::placeholder{
+    color: black;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  .input-box:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px #6c63ff;
+    font-weight: bold;
+  }
+
+ .back-video{
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+ }
+
+
+ @media (min-aspect-ratio: 16/9){
+
+       .back-video{
+        width: 100%;
+        height: auto;
+
+       }
+ }
