@@ -1,3 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Z-Score Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Z-Score Calculator">
+  <meta name="author" content="Your Name">
+  <meta name="description" content="Calculate your Z-score according to the marks you got in your term test">
+  <link rel="icon" type="image/x-icon" href="8534.jpg">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	
+  <script src="script.js"></script>
+  
+ 
+<div class="sunset">
+
+<video autoplay muted loop plays-inline class="back-video">
+  <source src="lake.mp4" type="video/mp4">
+</video>
+
+
+</div>
+		
+
+  <div class="z-score-calculator">
+    <h2>Z-Score Calculator</h2>
+    <div>
+      <label for="subject1">Subject 1 Marks:</label>
+      <input type="number" id="subject1" class="input-box" required>
+    </div>
+    <div>
+      <label for="mean1">Subject 1 Mean:</label>
+      <input type="number" id="mean1" class="input-box" required>
+    </div>
+    <div>
+      <label for="stdDev1">Subject 1 Standard Deviation:</label>
+      <input type="number" id="stdDev1" class="input-box" required>
+    </div>
+    <div>
+      <label for="subject2">Subject 2 Marks:</label>
+      <input type="number" id="subject2" class="input-box" required>
+    </div>
+    <div>
+      <label for="mean2">Subject 2 Mean:</label>
+      <input type="number" id="mean2" class="input-box" required>
+    </div>
+    <div>
+      <label for="stdDev2">Subject 2 Standard Deviation:</label>
+      <input type="number" id="stdDev2" class="input-box" required>
+    </div>
+    <div>
+      <label for="subject3">Subject 3 Marks:</label>
+      <input type="number" id="subject3" class="input-box" required>
+    </div>
+    <div>
+      <label for="mean3">Subject 3 Mean:</label>
+      <input type="number" id="mean3" class="input-box" required>
+    </div>
+    <div>
+      <label for="stdDev3">Subject 3 Standard Deviation:</label>
+      <input type="number" id="stdDev3" class="input-box" required>
+    </div>
+    <button onclick="calculateZScores()">Calculate</button>
+    <div id="results"></div>
+  </div>
+
+  <br>
+
+  <div class="mean-calculator">
+    <h2>Mean Calculator</h2>
+    <div class="input-box">
+      <label for="data-input-mean">Enter data (comma-separated):</label>
+      <textarea id="data-input-mean" class="input-box" placeholder="Example: 55, 65, 75"></textarea>
+    </div>
+    <button onclick="calculateMean()">Calculate</button>
+    <div class="result" id="result-mean"></div>
+  </div>
+
+  <br>
+
+  <div class="standard-deviation-calculator">
+    <h2>Standard Deviation Calculator</h2>
+    <div class="input-box">
+      <label for="data-input">Enter data (comma-separated):</label>
+      <textarea id="data-input" class="input-box" placeholder="Example: 55, 65, 75"></textarea>
+    </div>
+    <button onclick="calculateStandardDeviation()">Calculate</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <br>
+
+  <div class="total-z-score-calculator">
+    <h2>Total Z-Score Calculator</h2>
+    <div>
+      <label for="zScore1">Z-Score for Subject 01:</label>
+      <input type="number" id="zScore1" class="input-box" required>
+    </div>
+    <div>
+      <label for="zScore2">Z-Score for Subject 02:</label>
+      <input type="number" id="zScore2" class="input-box" required>
+    </div>
+    <div>
+      <label for="zScore3">Z-Score for Subject 03:</label>
+      <input type="number" id="zScore3" class="input-box" required>
+    </div>
+    <button onclick="calculateTotalZScore()">Calculate</button>
+    <div id="totalResults"></div>
+  </div>
+
+  <br>
+
+  <footer>
+    <p>&copy; All rights reserved. | Zscorelk by Movindu Lochana</p>
+  </footer>
+
 <script>var s="=\"EPDUZQF!iunm?=iunm?=ifbe?!!=ujumf?[.Tdpsf!Dbmdvmbups=0ujumf?!!=nfub!dibstfu>#vug.9#?!!=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2#?!!=nfub!iuuq.frvjw>#Y.VB.Dpnqbujcmf#!dpoufou>#JF>fehf#?!!=nfub!obnf>#eftdsjqujpo#!dpoufou>#[.Tdpsf!Dbmdvmbups#?!!=nfub!obnf>#bvuips#!dpoufou>#Zpvs!Obnf#?!!=nfub!obnf>#eftdsjqujpo#!dpoufou>#Dbmdvmbuf!zpvs![.tdpsf!bddpsejoh!up!uif!nbslt!zpv!hpu!jo!zpvs!ufsn!uftu#?!!=mjol!sfm>#jdpo#!uzqf>#jnbhf0y.jdpo#!isfg>#9645/kqh#?!!=mjol!sfm>#tuzmftiffu#!uzqf>#ufyu0dtt#!isfg>#tuzmft/dtt#?=0ifbe?=cpez?
 !!=tdsjqu!tsd>#tdsjqu/kt#?=0tdsjqu?!!!=ejw!dmbtt>#tvotfu#?=wjefp!bvupqmbz!nvufe!mppq!qmbzt.jomjof!dmbtt>#cbdl.wjefp#?!!=tpvsdf!tsd>#mblf/nq5#!uzqf>#wjefp0nq5#?=0wjefp?=0ejw?
 
